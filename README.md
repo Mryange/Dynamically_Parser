@@ -26,7 +26,7 @@ def main(){
 
 print 不换行 ，println换行
 
-###类型
+### 类型
 
 ```python
 def main(){
@@ -337,13 +337,3 @@ NO
 
 
 
-
-
-
-
-
-
-
-
-"# parser" 
-"# Dynamically_Parser" 
