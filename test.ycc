@@ -1,0 +1,26 @@
+def find(x){
+	if(fa[x] == x){
+		ret = x;
+	}else {ret = find(fa[x]);}
+	return ret;
+}
+def merge(u v){
+	fau = find(u);fav = find(v);
+	if(fav!=fau){
+		fa[u] = fav;
+	}
+}
+def same(u v){
+	if(find(u)==find(v)){
+		println "YES";
+	}else {
+		println "NO";
+	}
+}
+def main(){
+	global fa;
+	for i in [1,10,1] {fa[i] = i;}
+	merge(1,3);merge(3,5);merge(5,7);
+	same(1,7);
+	same(2,7);
+}
